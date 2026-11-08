@@ -1,106 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amar Seva Aashram | Global Gau Seva Trust - Kolkata</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,800;9..144,900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amar Seva Aasharam - Cow Seva NGO</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#fdfaf3;color:#2b2116;overflow-x:hidden}
-h1,h2{font-family:'Fraunces',serif}
-.hero{position:relative;min-height:92vh;display:flex;align-items:center;padding:5% 5%;background:linear-gradient(90deg,#fdfaf3 42%,rgba(253,250,243,0.6) 70%,transparent),url('https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?q=80&w=2000') center/cover}
-.hero-box{max-width:620px;position:relative;z-index:2}
-.badge{display:inline-flex;gap:8px;align-items:center;background:#2b2116;color:#ffde59;padding:7px 14px;border-radius:100px;font-size:11px;font-weight:800;letter-spacing:1px}
-.hero h1{font-size:clamp(44px,7vw,86px);line-height:0.9;margin:18px 0}.hero h1 span{color:#b45309}
-.btn{display:inline-flex;padding:15px 28px;border-radius:100px;font-weight:800;text-decoration:none;transition:.3s;margin:6px 6px 6px 0}
-.btn-brown{background:#2b2116;color:#ffde59;box-shadow:0 8px 20px rgba(43,33,22,0.2)}.btn-brown:hover{transform:translateY(-2px)}
-.btn-outline{border:1.5px solid #2b2116;color:#2b2116}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.card{background:#fff;border:1px solid #f0e0b0;border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,0.04)}
-.pay-wrap{background:#111;color:#fff;border-radius:28px;padding:6px;display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
-.pay-tab{flex:1;min-width:120px;text-align:center;padding:12px;border-radius:20px;font-weight:800;font-size:13px;cursor:pointer;background:#222}
-.pay-tab.active{background:#ffde59;color:#000}
-.pay-content{background:#fff;border:1px solid #f0e0b0;border-radius:20px;padding:24px;margin-top:12px}
-.pay-btn{display:block;width:100%;padding:16px;border-radius:14px;font-weight:800;text-decoration:none;text-align:center;margin:10px 0;transition:.3s}
-.pay-paypal{background:#ffc439;color:#000}.pay-razor{background:#2b2116;color:#ffde59}.pay-upi{background:#00b96a;color:#fff}
-.section{max-width:1220px;margin:0 auto;padding:70px 5%}
-.float-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:62px;height:62px;border-radius:100%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;box-shadow:0 10px 25px rgba(37,211,102,0.4);z-index:99;animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 #25D366aa}70%{box-shadow:0 0 0 15px #25D36600}100%{box-shadow:0 0 0 0 #25D36600}}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fff8ec;color:#333}
+header{background:#2e7d32;color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+header a{color:white;text-decoration:none;font-weight:bold;font-size:18px}
+nav a{color:white;margin-left:15px;text-decoration:none;font-size:15px}
+.hero{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/cow1.jpg');background-size:cover;background-position:center;color:white;text-align:center;padding:70px 20px}
+.hero h1{font-size:36px;margin-bottom:10px}
+.hero p{font-size:17px;margin-bottom:20px}
+.btn{display:inline-block;background:#ff9800;color:white;padding:13px 28px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px}
+.btn-green{background:#2e7d32}
+.container{max-width:1000px;margin:0 auto;padding:20px}
+.section{padding:30px 0;text-align:center}
+.section h2{color:#2e7d32;font-size:28px;margin-bottom:12px}
+.section p{font-size:16px;line-height:1.6;max-width:750px;margin:0 auto 15px}
+.cards{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-top:20px}
+.card{background:white;border-radius:12px;padding:20px;width:280px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.card h3{color:#ff9800;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px;margin-top:20px}
+.gcard{background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.gcard img{width:100%;height:220px;object-fit:cover;display:block;background:#eee}
+.gcard p{padding:12px;font-size:14px}
+.donate-box{background:white;border-radius:12px;padding:30px;max-width:700px;margin:20px auto;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.upi-box{background:#e8f5e9;padding:15px;border-radius:10px;font-size:22px;font-weight:bold;margin:15px 0;word-break:break-all}
+.amounts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:15px 0}
+.amount{border:2px solid #2e7d32;padding:12px 20px;border-radius:8px;font-weight:bold}
+.amount:hover{background:#2e7d32;color:white}
+table{width:100%;border-collapse:collapse;margin-top:15px;text-align:left}
+table td{padding:10px;border-bottom:1px solid #eee}
+table td:first-child{font-weight:bold;width:40%}
+footer{background:#2e7d32;color:white;text-align:center;padding:25px;margin-top:20px}
+footer a{color:#ffe082;text-decoration:none}
 </style>
 </head>
 <body>
 
-<a class="float-wa" href="https://wa.me/919088377074?text=Jai%20Gau%20Mata%20🙏%20-%20I%20want%20to%20donate%20for%20Amar%20Seva%20Aashram" target="_blank">W</a>
+<header>
+<a href="index.html">🐄 Amar Seva Aasharam</a>
+<nav>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#donate">Donate</a>
+</nav>
+</header>
 
+<!-- TOP - HERO -->
 <div class="hero">
-  <div class="hero-box">
-    <div class="badge">● FCRA APPROVED NGO - KOLKATA | 80G TAX EXEMPT</div>
-    <h1>Serving<br><span>100+ Gau</span><br>Mata Daily</h1>
-    <p style="color:#6b5a45;line-height:1.7;font-size:17px">Amar Seva Aashram rescues abandoned cows in Kolkata. Get daily Gau Seva video on your WhatsApp. Join 5000+ global donors.</p>
-    <div style="margin-top:18px">
-      <a href="#donate" class="btn btn-brown">Donate Now - Global →</a>
-      <a href="https://wa.me/919088377074?text=Jai%20Gau%20Mata%20🙏%20Gaushala%20Live%20Video" class="btn btn-outline">WhatsApp: 90883 77074</a>
-    </div>
-    <p style="font-size:11px;margin-top:18px;letter-spacing:1px;color:#8a7a65">✓ 80G INDIA ✓ FCRA FOR USA/UK/UAE ✓ DAILY UPDATE ON WHATSAPP</p>
-  </div>
+<h1>🙏 Amar Seva Aasharam</h1>
+<p>Cow Seva NGO - Rescue, Care & Protect Cows</p>
+<a class="btn" href="#donate">Donate Now 🙏</a>
+<a class="btn btn-green" href="#gallery">See Gallery 📸</a>
 </div>
 
-<div class="section" style="padding-bottom:20px">
-  <div class="grid">
-    <div class="card"><h3>🌿 Daily Chara Seva - ₹501</h3><p style="color:#6b5a45;margin-top:8px">Feed one Gau Mata. Photo/video proof on WhatsApp 90883 77074</p></div>
-    <div class="card"><h3>🏥 Medical Seva - ₹2100</h3><p style="color:#6b5a45;margin-top:8px">Medicine & doctor for injured cows. Bill + video milega.</p></div>
-    <div class="card"><h3>🏠 Adoption - ₹11000 / Year</h3><p style="color:#6b5a45;margin-top:8px">Name plate in Gaushala + monthly video updates on WhatsApp.</p></div>
-  </div>
+<div class="container">
+
+<!-- ABOUT -->
+<div class="section" id="about">
+<h2>About Our Aasharam</h2>
+<p>Amar Seva Aasharam is dedicated to rescue, care and protection of abandoned and injured cows. We provide food, shelter and medical care daily.</p>
+<div class="cards">
+<div class="card"><h3>🐄 50+ Cows</h3><p>Rescued cows living happily in our aasharam</p></div>
+<div class="card"><h3>🍀 Daily Feeding</h3><p>Fresh green fodder, water & love every day</p></div>
+<div class="card"><h3>🩺 Medical Care</h3><p>Daily checkup and treatment by doctor</p></div>
+</div>
 </div>
 
-<div class="section" id="donate">
-  <h2 style="font-size:42px;text-align:center">Choose Your <span style="color:#b45309">Seva & Pay</span></h2>
-  <p style="text-align:center;color:#8a7a65;margin:10px 0 30px">100% Secure - International Payments Accepted</p>
-  
-  <div class="grid">
-    <div>
-      <div class="pay-wrap">
-        <div class="pay-tab active">INDIA (UPI)</div>
-        <div class="pay-tab">INTERNATIONAL</div>
-        <div class="pay-tab">BANK</div>
-      </div>
-      <div class="pay-content">
-        <h3 style="text-align:center">Donate via UPI / GPay / PhonePe</h3>
-        <div class="pay-btn pay-upi">UPI ID: 9088377074@ybl <br><small>Click to copy - GPay / PhonePe / Paytm</small></div>
-        <p style="text-align:center;font-size:13px;color:#6b5a45;margin:10px 0">Screenshot bhejiye WhatsApp pe receipt ke liye</p>
-        <a href="https://wa.me/919088377074?text=Jai%20Gau%20Mata%20🙏%20Maine%20UPI%20se%20donate%20kiya%20hai%20-%20Receipt%20chahiye" class="pay-btn pay-razor">Send Screenshot on WhatsApp 90883 77074</a>
-
-        <hr style="margin:20px 0;border:none;border-top:1px dashed #e8c97a">
-
-        <h3 style="text-align:center">For NRI / International Donors</h3>
-        <a href="https://www.paypal.me/amarseva" target="_blank" class="pay-btn pay-paypal">💳 PayPal - USD / EUR / GBP / AED Accepted</a>
-        <a href="https://wa.me/919088377074?text=Hi%20Amar%20Seva%20Aashram%20-%20I%20am%20from%20outside%20India%20and%20want%20to%20donate%20internationally" class="pay-btn" style="background:#fff;border:1.5px solid #2b2116;color:#2b2116">Get Razorpay International Link on WhatsApp</a>
-        <p style="font-size:11px;color:#8a7a65;text-align:center;margin-top:10px">PayPal ID: amarseva@gmail.com | SWIFT: SBININBB | For FCRA Account Details, WhatsApp us</p>
-      </div>
-    </div>
-
-    <div class="card" style="background:#2b2116;color:#ffde59;border:none">
-      <h2 style="color:#fff">Why 5000+ Trust Us?</h2>
-      <p style="margin:15px 0;color:#c9b896;line-height:1.8">
-      ✓ Daily Live Video on WhatsApp 90883 77074<br>
-      ✓ 80G Certificate Instant on WhatsApp<br>
-      ✓ FCRA Approved - Legal Foreign Donation<br>
-      ✓ SBI Bank Account - Govt Audited<br>
-      ✓ 10+ Years Gau Seva, Kolkata<br><br>
-      <b style="color:#fff">After Payment:</b><br>
-      1. Screenshot bhejo 90883 77074 pe<br>
-      2. Naam, Address bhejo<br>
-      3. 80G Receipt 5 min me PDF
-      </p>
-      <a href="https://wa.me/919088377074?text=Jai%20Gau%20Mata%20🙏%20Mujhe%20Gaushala%20ka%20Live%20Video%20dekhna%20hai" style="display:block;background:#ffde59;color:#000;text-align:center;padding:14px;border-radius:12px;font-weight:900;text-decoration:none">Chat on WhatsApp Now</a>
-    </div>
-  </div>
+<!-- ============ GALLERY ADDED AT BOTTOM - PART 1 ============ -->
+<div class="section" id="gallery">
+<h2>📸 Our Seva Gallery</h2>
+<p>Rescued cows, daily feeding & aasharam life</p>
+<div class="grid">
+<div class="gcard"><img src="images/cow1.jpg" alt="Rescued Cow"><p><b>Rescued Cow - Ganga</b><br>Rescued from road, now healthy</p></div>
+<div class="gcard"><img src="images/cow2.jpg" alt="Feeding"><p><b>Daily Feeding</b><br>Morning food seva - 7 AM</p></div>
+<div class="gcard"><img src="images/cow3.jpg" alt="Care"><p><b>Medical Care</b><br>Daily checkup by doctor</p></div>
+<div class="gcard"><img src="images/aasharam1.jpg" alt="Aasharam"><p><b>Our Aasharam</b><br>Shelter for 50+ cows</p></div>
+<div class="gcard"><img src="images/cow4.jpg" alt="Calf"><p><b>New Calf - Radha</b><br>Born in aasharam</p></div>
+<div class="gcard"><img src="images/seva1.jpg" alt="Seva"><p><b>Seva Work</b><br>Volunteers cleaning shelter</p></div>
+</div>
+<p style="margin-top:15px">🎥 Watch Video: <a href="https://youtube.com/@yourchannel" style="color:#ff9800;font-weight:bold">Watch on YouTube ▶</a></p>
 </div>
 
-<div style="text-align:center;padding:35px;background:#2b2116;color:#9c8a6e;font-size:13px">
-  <b style="color:#fff">Amar Seva Aashram Trust</b><br>
-  Kolkata, WB - 700001 | WhatsApp: +91 90883 77074 | amarseva@gmail.com<br>
-  FCRA Regd. | 80G Approved | SBI A/C: XXXX | © 2026
+<!-- ============ DONATE ADDED AT BOTTOM - PART 2 ============ -->
+<div class="section" id="donate" style="background:#fff3e0;border-radius:15px;padding:30px 15px">
+<h2>🙏 Donate For Gau Seva</h2>
+<p>Your donation feeds, shelters & heals rescued cows.<br>One day food for 1 cow = Rs 150</p>
+
+<div class="donate-box">
+<h3 style="color:#2e7d32">Choose Amount</h3>
+<div class="amounts">
+<div class="amount">Rs 151</div>
+<div class="amount">Rs 501</div>
+<div class="amount">Rs 1,001</div>
+<div class="amount">Rs 2,100</div>
+<div class="amount">Rs 5,100</div>
+<div class="amount">Rs 11,000</div>
 </div>
+<p style="font-size:14px">Rs 151 = 1 Day Food &nbsp;|&nbsp; Rs 501 = 3 Days Food &nbsp;|&nbsp; Rs 5,100 = 1 Month Care</p>
+
+<hr style="margin:20px 0;border:1px solid #eee">
+
+<h3 style="color:#2e7d32">Donate via UPI</h3>
+<p>Pay on Google Pay / PhonePe / Paytm</p>
+<div class="upi-box">YOUR-UPI-ID@upi</div>
+<p style="font-size:13px;color:#666">👆 Replace with your real UPI ID</p>
+<a class="btn btn-green" href="upi://pay?pa=YOUR-UPI-ID@upi&pn=Amar%20Seva%20Aasharam&cu=INR">Pay via UPI App</a>
+
+<hr style="margin:20px 0;border:1px solid #eee">
+
+<h3 style="color:#2e7d32">Donate via Bank</h3>
+<table>
+<tr><td>Account Name</td><td>Amar Seva Aasharam</td></tr>
+<tr><td>Account Number</td><td>XXXXXXXXXX</td></tr>
+<tr><td>IFSC Code</td><td>XXXX0001234</td></tr>
+<tr><td>Bank Name</td><td>Your Bank Name</td></tr>
+</table>
+<p style="font-size:13px;color:#666;margin-top:10px">👆 Replace XXXX with your real bank details</p>
+
+<hr style="margin:20px 0;border:1px solid #eee">
+
+<h3 style="color:#2e7d32">Scan QR Code</h3>
+<img src="images/qr.png" alt="Donate QR" style="width:200px;height:200px;object-fit:cover;border:2px solid #eee;border-radius:10px;margin:10px 0">
+<p style="font-size:13px">Upload your QR as <b>images/qr.png</b></p>
+<br>
+<a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Namaste,%20I%20want%20to%20donate%20for%20Gau%20Seva">Donate on WhatsApp</a>
+<p style="font-size:13px;color:#666;margin-top:10px">👆 Replace 91XXXXXXXXXX with your WhatsApp number</p>
+<p style="font-size:13px;margin-top:15px;background:#fff3cd;padding:12px;border-radius:8px">After donation, send screenshot on WhatsApp for receipt. 80G receipt on request.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>🐄 <b>Amar Seva Aasharam - Cow Seva NGO</b><br>
+<a href="#gallery">Gallery</a> | <a href="#donate">Donate</a> | <a href="https://wa.me/91XXXXXXXXXX">WhatsApp Us</a><br><br>
+Made with ❤️ for Gau Seva</p>
+</footer>
 
 </body>
 </html>
