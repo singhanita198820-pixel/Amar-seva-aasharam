@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Amar Seva Aasharam</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fff8ec;color:#333}
+header{background:#2e7d32;color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+header a{color:white;text-decoration:none;font-weight:bold}
+nav a{color:white;margin-left:15px;text-decoration:none}
+.hero{background:#ff9800;color:white;text-align:center;padding:35px 20px}
+.hero h1{font-size:30px}
+.container{max-width:1000px;margin:20px auto;padding:0 15px}
+.filter{text-align:center;margin-bottom:20px}
+.filter button{padding:8px 18px;margin:5px;border:2px solid #2e7d32;background:white;border-radius:20px;cursor:pointer;font-weight:bold}
+.filter button.active,.filter button:hover{background:#2e7d32;color:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+.card img{width:100%;height:220px;object-fit:cover;display:block;background:#eee}
+.card p{padding:12px;font-size:14px;text-align:center}
+.card p b{color:#2e7d32}
+.video-box{background:#000;color:white;text-align:center;padding:50px 20px;border-radius:12px;margin:25px 0}
+.video-box a{color:#ff9800;font-weight:bold}
+footer{background:#2e7d32;color:white;text-align:center;padding:20px;margin-top:30px}
+</style>
+</head>
+<body>
+
+<header>
+<a href="index.html">🐄 Amar Seva Aasharam</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="donate.html">Donate</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>📸 Our Seva Gallery</h1>
+<p>Rescued cows, daily feeding & aasharam life</p>
+</div>
+
+<div class="container">
+
+<div class="filter">
+<button class="active">All</button>
+<button>Rescued Cows</button>
+<button>Feeding</button>
+<button>Aasharam</button>
+</div>
+
+<div class="grid">
+<!-- COPY THIS BLOCK FOR EACH NEW PHOTO -->
+<div class="card">
+<img src="images/cow1.jpg" alt="Rescued Cow">
+<p><b>Rescued Cow - Ganga</b><br>Rescued from road, now healthy</p>
+</div>
+
+<div class="card">
+<img src="images/cow2.jpg" alt="Feeding Time">
+<p><b>Daily Feeding</b><br>Morning food seva - 7 AM</p>
+</div>
+
+<div class="card">
+<img src="images/cow3.jpg" alt="Cow Care">
+<p><b>Medical Care</b><br>Daily checkup by doctor</p>
+</div>
+
+<div class="card">
+<img src="images/aasharam1.jpg" alt="Aasharam">
+<p><b>Our Aasharam</b><br>Shelter for 50+ cows</p>
+</div>
+
+<div class="card">
+<img src="images/cow4.jpg" alt="Calf">
+<p><b>New Calf - Radha</b><br>Born in aasharam</p>
+</div>
+
+<div class="card">
+<img src="images/seva1.jpg" alt="Seva Work">
+<p><b>Seva Work</b><br>Volunteers cleaning shelter</p>
+</div>
+</div>
+
+<div class="video-box">
+<h2>🎥 Watch Our Seva Video</h2>
+<p style="margin:12px 0">Add your YouTube video link here</p>
+<a href="https://youtube.com/@yourchannel">▶ Watch on YouTube</a>
+</div>
+
+<div style="text-align:center;padding:20px">
+<h3>Want to Visit?</h3>
+<p>Come and feed cows with your own hands.</p>
+<br>
+<a href="donate.html" style="background:#ff9800;color:white;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold">Donate For Seva 🙏</a>
+</div>
+
+</div>
+
+<footer>
+<p>🐄 Amar Seva Aasharam - Cow Seva NGO<br>Made with ❤️ for Gau Seva</p>
+</footer>
+
+</body>
+</html>
